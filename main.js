@@ -1,6 +1,11 @@
-var hamburgerMenu = $("i.fas.fa-times");
+var hamburgerMenu = $("i.fa-times");
+
 
 hamburgerMenu.click(function () {
   var menuActive = $(".hamburger-menu");
-  menuActive.addClass(".active");
+  if(menuActive.hasClass("active")) {
+    menuActive.removeClass("active");
+  } else {
+    menuActive.addClass("active");
+  }
 })
